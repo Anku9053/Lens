@@ -1,0 +1,99 @@
+.blog-card {
+    color: white;
+    border: 1px solid transparent;
+    padding: 2rem;
+    border-radius: 20px;
+    background: #1b1c1e;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .blog-card:hover {
+    /* transform: translateY(-10px); */
+    /* animation: slideUp 0.5s forwards; */
+    
+  }
+  
+  .blog-card:hover .blog-content,
+  .blog-card:hover p {
+    animation: slideUp 0.5s forwards; /* Apply animation to h2 and p */
+  }
+
+  .blog-card:hover h2{
+    animation: slideUp 0.5s forwards;
+
+  }
+  
+  .blog-card:hover .new-tag span,
+  .blog-card:hover .date-tag span {
+    animation: slideSpan 0.5s forwards; /* Apply animation to span tag */
+  }
+
+
+  /* .blog-card:hover{
+    animation: slideUp 0.5s for;
+  } */
+  
+  .new-tag,
+  .date-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    background: rgb(248, 99, 96);
+    border-radius: 20px 0 0 20px;
+    z-index: 1;
+  }
+  
+  .blog-content {
+    padding: 1rem;
+    border-radius: 20px;
+    background: rgb(36, 36, 36);
+    margin-top: 2rem;
+  }
+  
+  /* Adjusted margins for h2 and p */
+  h2 {
+    margin-bottom: 1rem; /* Maintain distance between h2 and p */
+  }
+
+  
+  .explore-button .arrow {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s, transform 0.3s; /* Added transition for opacity and transform */
+  }
+  
+  .explore-button:hover {
+    background: white;
+    color: black;
+    padding: 10px 40px; /* Increase padding */
+    width: 200px; /* Increase width */
+  }
+  
+  .explore-button:hover .arrow {
+    opacity: 1; /* Show arrow on hover */
+    transform: translateX(5px); /* Move arrow to the right */
+  }
+  
+  
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-20%);
+    }
+  }
+  
+  @keyframes slideSpan {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%); /* Slide the span tag to the right */
+    }
+  }
+  
+
+  
