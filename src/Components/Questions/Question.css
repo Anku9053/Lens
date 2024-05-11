@@ -6,13 +6,12 @@
     border-radius: 20px;
     margin: auto;
     padding: 2rem;
-    /* margin-top: 2rem; */
-    position: relative; /* Add relative positioning to the question container */
+    position: relative;
   }
   
   .question-item {
-    position: relative; /* Ensure the question item acts as the positioning context */
-    overflow: visible; /* Allow content to overflow */
+    position: relative;
+    overflow: visible;
   }
   
   .question {
@@ -21,8 +20,8 @@
     border: 1px solid white;
     padding: 10px;
     cursor: pointer;
-    position: relative; /* Ensure the question acts as the positioning context */
-    z-index: 1; /* Ensure the question is above the answer */
+    position: relative;
+    z-index: 1;
   }
   
   .answer {
@@ -30,36 +29,30 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: calc(100% + 10px); /* Position the answer below the question */
+    top: calc(100% + 10px);
     background-color: #1b1c1e;
     border-radius: 10px;
     padding: 10px;
     opacity: 0;
-    max-height: 0; /* Set initial max-height to 0 */
-    overflow: hidden; /* Hide overflow content */
-    transition: max-height 0.5s ease, opacity 0.5s ease; /* Added transition for max-height and opacity */
-    z-index: 2; /* Ensure the answer is above the question */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    z-index: 2;
   }
   
   .answer.open {
     opacity: 1;
-    max-height: 1000px; /* Set max-height to a large value to allow for sliding animation */
+    max-height: 1000px;
   }
   
   .question-item:nth-child(odd) {
-    margin-top: 2rem; /* Add margin-top to odd question items to create space between questions */
+    margin-top: 2rem;
   }
   
   .question-item:nth-child(even) {
-    margin-top: 2rem; /* Add margin-top to odd question items to create space between questions */
+    margin-top: 2rem;
   }
-  /* .answer.open {
-    opacity: 1;
-    transform: translateY(0%);
-  } */
-  
   .answer.closed {
     opacity: 0;
-    /* transform: translateY(-100%); */
   }
   

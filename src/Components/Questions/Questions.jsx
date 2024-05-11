@@ -3,11 +3,11 @@ import './Question.css';
 import { FaArrowDown } from "react-icons/fa";
 
 export const Questions = () => {
-    const [showAnswers, setShowAnswers] = useState(Array(6).fill(false)); // Initialize all answers to be initially open
+    const [showAnswers, setShowAnswers] = useState(Array(6).fill(false));
     const toggleAnswer = (index) => {
       setShowAnswers((prevState) => {
         const updatedAnswers = [...prevState];
-        updatedAnswers[index] = !updatedAnswers[index]; // Toggle the visibility of the answer at the specified index
+        updatedAnswers[index] = !updatedAnswers[index];
         return updatedAnswers;
       });
     };

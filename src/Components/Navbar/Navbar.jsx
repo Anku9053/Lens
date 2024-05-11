@@ -7,7 +7,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      setIsVisible(scrollTop <= 0); // Set visibility based on scroll position
+      setIsVisible(scrollTop <= 0);
     };
 
     window.addEventListener('scroll', handleScroll);
