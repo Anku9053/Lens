@@ -10,9 +10,9 @@ const About = () => {
       </div>
       <div className="w-40 mx-auto mt-4 h-2 rounded-full bg-gradient-to-r from-blue-500 to-teal-300"></div>
 
-      <div style={{ borderRadius: "10px", display: "flex", background: "#1b1c1e", gridTemplateColumns: "repeat(2,1fr)", width: "80%", margin: "auto", height: "500px", marginTop: "3rem", padding: "4rem", transition: "transform 0.5s ease", transform: hovered ? "scale(0.95)" : "none" }}
-           onMouseEnter={() => setHovered(false)}
-           onMouseLeave={() => setHovered(true)}
+      <div className="flex" style={{ borderRadius: "10px", display: "flex", background: "#1b1c1e", gridTemplateColumns: "repeat(2,1fr)", width: "80%", margin: "auto", height: "500px", marginTop: "3rem", padding: "4rem", transition: "transform 0.5s ease", transform: hovered ? "scale(0.95)" : "none" }}
+           onMouseEnter={() => setHovered(true)}
+           onMouseLeave={() => setHovered(false)}
       >
         <div>
           <div>

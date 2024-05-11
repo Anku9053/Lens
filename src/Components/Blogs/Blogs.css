@@ -8,15 +8,10 @@
     overflow: hidden;
   }
   
-  .blog-card:hover {
-    /* transform: translateY(-10px); */
-    /* animation: slideUp 0.5s forwards; */
-    
-  }
-  
+ 
   .blog-card:hover .blog-content,
   .blog-card:hover p {
-    animation: slideUp 0.5s forwards; /* Apply animation to h2 and p */
+    animation: slideUp 0.5s forwards; 
   }
 
   .blog-card:hover h2{
@@ -26,14 +21,9 @@
   
   .blog-card:hover .new-tag span,
   .blog-card:hover .date-tag span {
-    animation: slideSpan 0.5s forwards; /* Apply animation to span tag */
+    animation: slideSpan 0.5s forwards; 
   }
 
-
-  /* .blog-card:hover{
-    animation: slideUp 0.5s for;
-  } */
-  
   .new-tag,
   .date-tag {
     position: absolute;
@@ -52,27 +42,26 @@
     margin-top: 2rem;
   }
   
-  /* Adjusted margins for h2 and p */
   h2 {
-    margin-bottom: 1rem; /* Maintain distance between h2 and p */
+    margin-bottom: 1rem; 
   }
 
   
   .explore-button .arrow {
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s, transform 0.3s; /* Added transition for opacity and transform */
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
   }
   
   .explore-button:hover {
     background: white;
     color: black;
-    padding: 10px 40px; /* Increase padding */
-    width: 200px; /* Increase width */
+    padding: 10px 40px; 
+    width: 200px; 
   }
   
   .explore-button:hover .arrow {
-    opacity: 1; /* Show arrow on hover */
-    transform: translateX(5px); /* Move arrow to the right */
+    opacity: 1; 
+    transform: translateX(5px); 
   }
   
   
@@ -91,7 +80,7 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(100%); /* Slide the span tag to the right */
+      transform: translateX(100%); 
     }
   }
   
