@@ -1,0 +1,17 @@
+.animation-text {
+    background: linear-gradient(to right, red, green, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: slideColorChange 5s infinite linear;
+    background-size: 200% 100%;
+}
+
+@keyframes slideColorChange {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}

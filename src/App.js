@@ -12,6 +12,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Slider from './Components/Slider/Slider';
 import { useState } from 'react';
 import { ThemeProvider } from './Components/Theme/ThemeConntext';
+import Video_animation from './Components/Video_animation/Video_animation';
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -26,6 +27,7 @@ function App() {
       <Navbar/>
       <Video/>
       <About/>
+      <Video_animation/>
       <Services/>
       <Why_Us/>
       <Blogs/>
