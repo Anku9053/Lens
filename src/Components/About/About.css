@@ -1,0 +1,50 @@
+
+
+@media (min-width: 10px) and (max-width: 300px) {
+    .h2{
+        /* border: 2px solid red; */
+        font-size: 50px;
+
+    }
+
+
+    .lens{
+        /* border: 2px  solid yellow; */
+        font-size: 10rem;
+        /* flex-wrap: wrap; */
+        position: relative;
+        /* width: 100%; */
+        right: 3.5rem;
+        font-weight: 200;
+
+    }
+
+    .flex{
+        padding: 1rem;
+        /* display: grid; */
+        /* grid-template-columns: repeat(1,1fr); */
+    }
+
+    .para{
+        text-align: left;
+        position: relative;
+        right: 2rem;
+    }
+
+    .Learn_more>button{
+        /* border: 2px solid red; */
+        position: relative;
+        right: 2rem;
+    }
+
+    .Learn_more>button:hover{
+        /* width: 45; */
+        position: relative;
+        right: 2rem;
+    }
+
+    .flex-bot{
+        display: flex;
+        /* flex-direction: column; */
+    }
+  }

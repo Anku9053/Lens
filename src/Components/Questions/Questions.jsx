@@ -12,6 +12,16 @@ export const Questions = () => {
       });
     };
   
+
+      const calculatetextalign = ()=>{
+        if (window.innerWidth <= 600) {
+          return "300%"; 
+      } else {
+          return "100%"; 
+      }
+      }
+      const initialtextalign = calculatetextalign();
+    
   
   
 
@@ -24,7 +34,7 @@ export const Questions = () => {
       <div className="w-20 mx-auto mt-2 h-1 rounded-full bg-gradient-to-r from-blue-500 to-teal-300"></div>
 
       <div>
-        <h2 style={{ color: "white", textAlign: "center", fontSize: "58px", fontStyle: "normal", fontWeight: "500", lineHeight: "normal", width: "65%", margin: "auto", marginTop: "2rem" }}>
+        <h2 style={{ color: "white", textAlign: "center", fontSize: initialtextalign, fontStyle: "normal", fontWeight: "500", lineHeight: "normal", width: "65%", margin: "auto", marginTop: "2rem" }}>
           Frequently Asked Questions
         </h2>
       </div>

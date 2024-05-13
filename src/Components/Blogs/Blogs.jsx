@@ -1,7 +1,17 @@
 import React from 'react';
 import "./Blogs.css"
+import { WiDayThunderstorm } from 'react-icons/wi';
 
 const Blogs = () => {
+  const calculatetextalign = ()=>{
+    if (window.innerWidth <= 600) {
+      return "300%"; 
+  } else {
+      return "100%"; 
+  }
+  }
+  const initialtextalign = calculatetextalign();
+
   return (
     <div className="mt-8">
       <div>
@@ -9,10 +19,10 @@ const Blogs = () => {
       </div>
       <div className="w-20 mx-auto mt-2 h-1 rounded-full bg-gradient-to-r from-blue-500 to-teal-300"></div>
       <div>
-        <h2 className="text-white text-center text-7xl font-semibold mt-8">Inhouse Mindscape</h2>
+        <h2 style={{fontSize:initialtextalign}} className="text-white text-center text-7xl font-semibold mt-8">Inhouse Mindscape</h2>
       </div>
 
-      <div className="grid grid-cols-2 w-4/5 gap-8 mx-auto mt-8">
+      <div className="grid grid-cols-2 w-4/5 gap-8 mx-auto mt-8 grid_blogs_dashboard">
         <div className="blog-card relative">
           <div className="new-tag absolute top-0 right-0 p-2 bg-red-600 rounded-l-full">
             <span>New</span>

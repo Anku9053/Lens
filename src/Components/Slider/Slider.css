@@ -1,0 +1,41 @@
+.slider-container {
+    overflow: hidden;
+    position: relative; /* Added for centering */
+  }
+  
+  .slider {
+    display: flex;
+    animation: slide 3s linear infinite; /* Adjust duration as needed */
+    /* Initial positioning to center the slider */
+    margin-left: 40vw;
+    
+  }
+  
+  .slide {
+    flex-shrink: 0;
+    margin: auto;
+    /* height: 500px; */
+    justify-content: center;
+
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .black-screen {
+    background-color: black;
+    flex-shrink: 0;
+    width: calc((100vw - 100%) / 2);
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(calc(-100% + -80vw));
+    }
+  }
+  

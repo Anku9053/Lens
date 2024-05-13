@@ -1,0 +1,24 @@
+@media (min-width: 100px) and (max-width: 600px) {
+  .services_h1 {
+    font-size: 30px;
+}
+
+.services_h2 {
+    font-size: 24px; /* Adjusted font size */
+    width: 30px;
+    position: relative;
+    right: 3rem;
+    font-weight: 200;
+    text-align: left;
+}
+
+.services_arrow {
+    width: 5rem;
+}
+
+    .grid_div_border {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+      /* border: 2px solid red; */
+  }
+  }

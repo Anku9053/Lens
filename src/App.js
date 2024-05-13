@@ -9,9 +9,19 @@ import Map from './Components/Map/Map';
 import Footer from './Components/Footer/Footer';
 import { Questions } from './Components/Questions/Questions';
 import Navbar from './Components/Navbar/Navbar';
-
+import Slider from './Components/Slider/Slider';
+import { useState } from 'react';
+import { ThemeProvider } from './Components/Theme/ThemeConntext';
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  // Function to toggle between dark and light themes
+  const toggleTheme = () => {
+      setDarkMode(!darkMode);
+  };
   return (
+    <ThemeProvider>
+
     <div className='bg-black' >
       <Navbar/>
       <Video/>
@@ -19,10 +29,12 @@ function App() {
       <Services/>
       <Why_Us/>
       <Blogs/>
+      <Slider/>
       <Questions/>
       <Map/>
       <Footer/>
     </div>
+    </ThemeProvider>
   );
 }
 

@@ -1,34 +1,53 @@
 import React from 'react'
-
+import "./services.css"
 const Services = () => {
     const [hovered, setHovered] = React.useState(false);
     const [hovered2, setHovered2] = React.useState(false);
     const [hovered3, setHovered3] = React.useState(false);
     const [hovered4, setHovered4] = React.useState(false);
+    const calculateFontSize = () => {
+        if (window.innerWidth <= 600) {
+            return "45px"; // Font size for screens up to 600px wide
+        } else {
+            return "58px"; // Default font size for larger screens
+        }
+    };
 
+    const initialFontSize = calculateFontSize();
     return (
         <div style={{marginTop:"2rem"}}>
             <div>
-                <h1 className="text-white text-center text-2xl font-semibold" style={{ textTransform: 'uppercase' }}>Services</h1>
+                <h1 className="text-white text-center text-2xl font-semibold services_h1" style={{ textTransform: 'uppercase' }}>Services</h1>
 
             </div>
-            <div className="w-40 mx-auto mt-4 h-2 rounded-full bg-gradient-to-r from-blue-500 to-teal-300"></div>
+            <div className="w-40 mx-auto mt-4 h-2 rounded-full bg-gradient-to-r from-blue-500 to-teal-300 services_arrow"></div>
 
             <div style={{ borderRadius: "10px", width: "100%", margin: "auto",marginTop:"-2rem", padding: "4rem", textAlign: "center", display: "flex", justifyContent: "center" }}>
-                <h2 className='text-white' style={{ width: "80%", textAlign: "center", fontSize: "58px", fontStyle: "normal", lineHeight: "normal", marginBottom: "5rem", fontWeight: "500" }}>
-                    We provide Artificial Intelligence Services
-                </h2>
+            <h2
+                className='text-white services_h2'
+                style={{
+                    width: "80%",
+                    textAlign: "center",
+                    fontSize: initialFontSize, 
+                    fontStyle: "normal",
+                    lineHeight: "normal",
+                    marginBottom: "5rem",
+                    fontWeight: "500"
+                }}
+            >
+                We provide Artificial Intelligence Services
+            </h2>
             </div>
 
 
-            <div style={{ borderRadius: "10px", display: "grid", gridTemplateColumns: "repeat(2,1fr)", width: "80%", margin: "auto", gap: "2rem", marginTop: "-9rem", padding: "4rem" }}>
+            <div  className="grid_div_border"  style={{ borderRadius: "10px", display: "grid", gridTemplateColumns: "repeat(2,1fr)", width: "80%", margin: "auto", gap: "2rem", marginTop: "-9rem", padding: "4rem" }}>
 
 
 
                 {/* 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111 */}
 
 
-                <div style={{ border: hovered ? "1px solid rgb(1, 201, 155)" : "1px solid white", borderRadius: "10px", background: "#1b1c1e", padding: "2rem" }}
+                <div  style={{ border: hovered ? "1px solid rgb(1, 201, 155)" : "1px solid white", borderRadius: "10px", background: "#1b1c1e", padding: "2rem" }}
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)}
                 >
