@@ -22,7 +22,7 @@ function App() {
   return (
     // <ThemeProvider>
 
-    <div>
+    <div className='bg-black'>
       <Navbar/>
       <Video/>
       <About/>
@@ -37,5 +37,4 @@ function App() {
     // </ThemeProvider>
   );
 }
-
 export default App;

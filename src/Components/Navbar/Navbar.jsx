@@ -29,8 +29,8 @@ const Navbar = () => {
         <li className="navbar-item"><a href="#about">Home</a></li>
         <li className="navbar-item"><a href="#services">Company</a></li>
         <li className="navbar-item"><a href="#contact">Blogs</a></li>
-        <Button onClick={toggleColorMode}>
-          {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+        <Button  style={{color:"white",backgroundColor:"transparent"}} onClick={toggleColorMode}>
+          {colorMode === 'light' ? <SunIcon /> : <MoonIcon />}
         </Button>
       </ul>
     </nav>
