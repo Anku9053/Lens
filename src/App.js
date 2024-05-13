@@ -20,9 +20,9 @@ function App() {
       setDarkMode(!darkMode);
   };
   return (
-    <ThemeProvider>
+    // <ThemeProvider>
 
-    <div className='bg-black' >
+    <div>
       <Navbar/>
       <Video/>
       <About/>
@@ -34,7 +34,7 @@ function App() {
       <Map/>
       <Footer/>
     </div>
-    </ThemeProvider>
+    // </ThemeProvider>
   );
 }
 
